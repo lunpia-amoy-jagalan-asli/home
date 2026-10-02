@@ -1,0 +1,52 @@
+export const products = [
+  {
+    id: 1,
+    name: "Lunpia Original",
+    description: "Lunpia dengan isi (rebung, telur, dan udang) + bumbu lunpia + acar + rawit",
+    price: 22000,
+    image: "🍤",
+    category: "Makanan Utama",
+    options: ["Basah", "Goreng"],
+    hasOptions: true,
+    priceType: "fixed",
+    useDus: true,
+    itemsPerDus: 10,
+    useDynamicItems: true,
+    maxDus: 50,
+    whatsappMessage: "Halo, saya ingin pesan Lunpia Original (Rp 22.000)"
+  },
+  {
+    id: 2,
+    name: "Lunpia Ayam",
+    description: "Lunpia dengan isi (rebung, telur, dan udang, dan ayam) + bumbu lunpia + acar + rawit",
+    price: 30000,
+    image: "🍗",
+    category: "Makanan Utama",
+    options: ["Basah", "Goreng"],
+    hasOptions: true,
+    priceType: "fixed",
+    minOrder: 10,
+    useDus: true,
+    itemsPerDus: 10,
+    useDynamicItems: true,
+    maxDus: 50,
+    whatsappMessage: "Halo, saya ingin pesan Lunpia Ayam (Rp 25.000)"
+  },
+  {
+    id: 3,
+    name: "Lunpia Custom",
+    description: "Lunpia dengan isi seuai permintaan anda",
+    price: 0,
+    image: "🌿",
+    category: "Custom Order",
+    options: ["Basah", "Goreng"],
+    hasOptions: true,
+    priceType: "custom",
+    customUnit: "Pesanan",
+    minOrder: 1,
+    useDus: true,
+    itemsPerDus: 10,
+    maxDus: 50,
+    whatsappMessage: "Halo, saya ingin pesan Lunpia Custom dengan isian ?? (Rp xx.xxx)"
+  }
+];

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lunpia Amoy Jagalan Asli dibuat dengan bahan segar">
+  <meta name="theme-color" content="#FF6B35">
+  <meta name="color-scheme" content="light">
+
+  <meta property="og:title" content="Lunpia Amoy Jagalan Asli dibuat dengan bahan segar">
+  <meta property="og:description" content="Masakan rumahan berkualitas dengan harga terjangkau.">
+  <meta property="og:type" content="website">
+  <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable">
+  
+  <title>Lunpia Amoy Jagalan Asli</title>
+
+  <link rel="stylesheet" href="/src/index.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/src/index.css"></noscript>
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <link rel="dns-prefetch" href="https://wa.me">
+
+  <link rel="preload" href="/src/fonts/poppins-v24-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/src/fonts/poppins-v24-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/src/fonts/poppins-v24-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+
+  <style>
+    :root{--primary:#FF6B35;--primary-dark:#E55A2B;--secondary:#004E89;--accent:#1A936F;--text:#333;--white:#fff;--shadow:0 2px 15px rgba(0,0,0,.1)}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Poppins',-apple-system,BlinkMacSystemFont,sans-serif;color:var(--text);line-height:1.6;background:#FFF9F5}
+    .container{max-width:1200px;margin:0 auto;padding:0 20px}
+    .navbar{background:var(--white);box-shadow:var(--shadow);position:fixed;width:100%;top:0;z-index:1000}
+    .navbar .container{display:flex;justify-content:space-between;align-items:center;padding:1rem 20px}
+    .logo{font-size:1.5rem;font-weight:700;color:var(--primary);display:flex;align-items:center}
+    .logo img{height:50px;width:auto;object-fit:contain}
+    .nav-menu{display:flex;list-style:none;gap:2rem}
+    .nav-menu a{text-decoration:none;color:var(--text);font-weight:500}
+    .hero{padding:120px 0 80px;background:linear-gradient(135deg,var(--primary),var(--accent));color:var(--white)}
+    .hero .container{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+    .hero h1{font-size:3rem;margin-bottom:1.5rem;line-height:1.2}
+    .hero p{font-size:1.1rem;margin-bottom:2rem;opacity:.9}
+    .hero-buttons{display:flex;gap:1rem}
+    .btn-primary,.btn-secondary{padding:12px 30px;border-radius:50px;text-decoration:none;font-weight:600;display:inline-block}
+    .btn-primary{background:var(--white);color:#080808}
+    .btn-secondary{background:transparent;color:var(--white);border:2px solid var(--white)}
+    .hero-image{display:flex;justify-content:center;align-items:center}
+    .hero-img{max-width:100%;height:auto;animation:gentleSway 3s ease-in-out infinite}
+    @keyframes gentleSway{0%,100%{transform:rotate(0deg) scale(1)}25%{transform:rotate(3deg) scale(1.02)}75%{transform:rotate(-3deg) scale(.98)}}
+    @media(max-width:768px){.hero .container{grid-template-columns:1fr;text-align:center}.hero h1{font-size:2.5rem}.hero-buttons{justify-content:center}.nav-menu{display:none}}
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container">
+      <a href="#home" class="logo">
+        <img src="/logo2.webp" alt="Lunpia Amoy Jagalan Asli Logo" width="175" height="40" loading="eager" fetchpriority="high" decoding="async">
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Nikmati Kelezatan Masakan Rumahan</h1>
+        <p>Lunpia Amoy Jagalan Asli dibuat dengan bahan segar dan penuh cinta. Rasakan sensasi masakan rumahan yang menggugah selera!</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn-primary">Lihat Menu</a>
+          <a href="#contact" class="btn-secondary">Pesan Sekarang</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="/image2.webp" alt="Sajian Lunpia" class="hero-img" width="300" height="300" loading="eager" fetchpriority="high" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu">
+    <div class="container">
+      <h2 class="section-title">Menu Kami</h2>
+      <p class="section-subtitle">Pilihan terbaik untuk santapan Anda hari ini</p>
+      <div id="menuGrid" class="menu-grid">
+        <!-- Menu items akan dirender oleh JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">Tentang Kami</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <!-- <p>Warung Bahagia hadir sejak 2015 dengan misi menyajikan masakan rumahan berkualitas dengan harga terjangkau. Setiap hidangan dibuat dengan resep turun-temurun dan bahan-bahan segar pilihan.</p> -->
+          <p>Lunpia Amoy Jagalan Asli hadir sejak 1943 dengan misi menyajikan masakan rumahan berkualitas dengan harga terjangkau. Setiap hidangan dibuat dengan resep turun-temurun dan bahan-bahan segar pilihan, disini menyediakan Lunpia isi original dan ayam. Lunpia Amoy Jagalan Asli tidak buka cabang ya.</p>
+          <div class="features">
+            <div class="feature-item">
+              <span class="feature-icon">✅</span>
+              <span>Bahan Segar Setiap Hari</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✅</span>
+              <span>Resep Tradisional</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✅</span>
+              <span>Harga Terjangkau</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✅</span>
+              <span>Pelayanan Ramah</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Hubungi Kami</h2>
+      <p class="section-subtitle">Pesan makanan favorit Anda melalui WhatsApp</p>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="info-item">
+            <span class="info-icon">🏠</span>
+            <p><a href="https://maps.app.goo.gl/bRiJeiw4U1b1k1uz6" target="_blank">Jl. Jagalan Banteng No. 95A, Semarang</a></p>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <p>024 - 3552889  /  +62 851-0190-6263</p>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🕒</span>
+            <p>Setiap Hari: 09.00 - 17.00 WIB</p>
+          </div>
+          <a href="https://wa.me/6285101906263" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">💬 Chat via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">&copy; <span id="year"></span> Lunpia Amoy Jagalan Asli.</p>
+      <div class="footer-social-links">
+        <a href="https://www.instagram.com/lunpiaamoyjagalan/" target="_blank" aria-label="Instagram">
+          <svg class="instagram-icon" viewBox="0 0 24 24" xmlns="http://w3.org">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
